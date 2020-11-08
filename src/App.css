@@ -1,0 +1,259 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.button {
+  color: '#142850';
+  background-color: 'white';
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 12px;
+  transition-duration: 0.4s;
+}
+
+.button:hover {
+  background-color: #78909c;
+  color: white;
+}
+
+h1 {
+  font-size: 22px;
+  margin: 0;
+  font-weight: 400;
+  line-height: 20px;
+  padding: 20px 2px;
+}
+
+a {
+  color: #404040;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #101010;
+}
+
+.sidebar {
+  margin-top: 3%;
+  margin-bottom: 3%;
+  position: absolute;
+  width: 20%;
+  height: 80%;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  border-right: 1px solid rgba(0, 0, 0, 0.25);
+}
+
+.map {
+  position: absolute;
+  left: 20%;
+  width: 100%;
+  height: calc(100vh - 150px);
+  top: 0;
+  bottom: 0;
+}
+
+.heading {
+  background: #fff;
+  border-bottom: 1px solid #eee;
+  height: 60px;
+  line-height: 60px;
+  padding: 0 10px;
+}
+
+.listings {
+  height: 100%;
+  overflow: hidden;
+}
+
+.listings .item {
+  display: block;
+  border-bottom: 1px solid #eee;
+  padding: 10px;
+  text-decoration: none;
+}
+
+.listings .item:last-child {
+  border-bottom: none;
+}
+
+.listings .item .title {
+  display: block;
+  color: rgb(34, 114, 146);
+  font-weight: 700;
+}
+
+.listings .item .title small {
+  font-weight: 400;
+}
+
+.listings .item.active .title,
+.listings .item .title:hover {
+  color: #142850;
+}
+
+.listings .item.active {
+  background-color: #e0dbdbe5;
+}
+
+::-webkit-scrollbar {
+  width: 3px;
+  height: 3px;
+  border-left: 0;
+  background: rgba(0, 0, 0, 0.1);
+}
+
+::-webkit-scrollbar-track {
+  background: none;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #e0dbdbe5;
+  border-radius: 0;
+}
+
+.clearfix {
+  display: block;
+}
+
+.clearfix::after {
+  content: '.';
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+/* Marker tweaks */
+
+.mapboxgl-popup-close-button {
+  display: none;
+  color: white;
+}
+
+.mapboxgl-popup-content {
+  font: 400 15px/22px 'Source Sans Pro', 'Helvetica Neue', Sans-serif;
+  padding: 0;
+  width: 300px;
+}
+
+.mapboxgl-popup-content h5 {
+  background: #142850;
+  color: #fff;
+  margin: 0;
+  display: block;
+  padding: 10px;
+  border-radius: 3px 3px 0 0;
+  font-weight: 600;
+  margin: -9px;
+}
+
+.mapboxgl-popup-content h6 {
+  margin-top: 5;
+  display: block;
+  padding: 10px;
+  font-weight: 400;
+}
+
+.mapboxgl-popup-content div {
+  padding: 10px;
+}
+
+.mapboxgl-container .leaflet-marker-icon {
+  cursor: pointer;
+}
+
+.mapboxgl-popup-anchor-top > .mapboxgl-popup-content {
+  margin-top: 15px;
+}
+
+.mapboxgl-popup-anchor-top > .mapboxgl-popup-tip {
+  border-bottom-color: #91c949;
+}
+
+.mapWrapper {
+  width: 100vw;
+  height: calc(100vh - 150px);
+}
+.container1 {
+  background: #fff;
+  color: black;
+  position: fixed;
+  top: 11.2rem;
+  left: 10px;
+  width: 300px;
+  height: 300px;
+  padding: 5px 10px;
+  border-radius: 3px;
+}
+
+.input_with_appended_unit select,
+input {
+  margin: 0;
+  padding: 0;
+  border: 1px solid black;
+}
+
+.input_with_appended_unit select {
+  height: 30px;
+  border-radius: 20px 0 0 20px;
+  padding-left: 5px;
+  border-right: 0;
+}
+
+.input_with_appended_unit input {
+  height: 28px;
+  border-radius: 0 20px 20px 0;
+  padding-left: 5px;
+  width: 50%;
+}
+
+.modal6 {
+  width: 75% !important ;
+  height: 50% !important ;
+  overflow-y: hidden !important ;
+}
+
+.mapbox-directions-destination {
+  position: fixed;
+}
