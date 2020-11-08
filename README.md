@@ -1,3 +1,9 @@
+src folder contains first version of code
+
+TIL folder contains latest version of code
+
+____________________________________________
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
